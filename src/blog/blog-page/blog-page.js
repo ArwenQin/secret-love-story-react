@@ -55,7 +55,7 @@ console.log("visitingUser",visitingUser)
       matched = true;
       console.log("checked if")
     }
-
+    console.log("matched is now", matched);
     setIsMatched(matched);console.log("matched?", isMatched);
   }, [visitingUser, currentUser]);
 
