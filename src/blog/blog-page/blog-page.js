@@ -73,17 +73,8 @@ function BlogPage(){
 
 
 
-
-
-
-
-
-
   const post = useSelector((state) => state.post.currentPost) || [];
   const anotherPost = useSelector((state) => state.post.anotherPost) || [];
-
-
-
 
 
     useEffect(() => {
@@ -106,9 +97,7 @@ function BlogPage(){
 
   console.log("another posts",anotherPost);
 
-
-
-
+  
 
   useEffect(() => {
     const fetchData = async () => {
