@@ -57,7 +57,7 @@ console.log("visitingUser",visitingUser)
     }
     console.log("matched is now", matched);
     setIsMatched(matched);console.log("matched?", isMatched);
-  }, [visitingUser, currentUser]);
+  }, [visitingUser, currentUser, isMatched]);
 
   useEffect(() => {
     const loadProfile = async () => {
@@ -93,7 +93,7 @@ console.log("visitingUser",visitingUser)
       if (visitingUser) {
         fetchData2();
       }
-    }, [visitingUser, dispatch]);
+    }, [visitingUser, dispatch,isMatched]);
 
   console.log("another posts",anotherPost);
 
