@@ -1,0 +1,56 @@
+.blog-page-word1{
+  top: 365px;
+  left:9%;
+position:absolute;
+
+  margin: 0;
+  padding: 0;
+}
+
+.blog-page-word2{
+  top: 240px;
+  left:41%;
+  position:absolute;
+
+  margin: 0;
+  padding: 0;
+}
+.hover-link1 {
+  color: hotpink;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s, text-decoration 0.3s; /* Add smooth transitions */
+}
+
+.hover-link2 {
+  color: deepskyblue;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s, text-decoration 0.3s; /* Add smooth transitions */
+}
+
+/* Hover style for .hover-link */
+.hover-link1:hover {
+  color: deeppink; /* Change color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.hover-link2:hover {
+  color: royalblue; /* Change color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}

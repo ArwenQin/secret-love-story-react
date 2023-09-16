@@ -1,24 +1,20 @@
-import Tuiter from "./foodadvisor";
-import {HashRouter, Navigate} from "react-router-dom";
+import LoveBlog from "./blog";
+import {HashRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
-
+import {Navigate} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   return (
-      <HashRouter>
+    <HashRouter>
 
-        <div className="container">
+      <Routes>
+      <Route path="/"         element={<Navigate to="/secretlovestory/home"/>}/>
+      <Route path="/secretlovestory/*" element={<LoveBlog/>}/>
+    </Routes>
 
-          <Routes>
-            <Route path="/"         element={<Navigate to="/tuiter/home"/>}/>
-            <Route path="/tuiter/*" element={<Tuiter/>}/>
-
-          </Routes>
-
-        </div>
-      </HashRouter>
-
+</HashRouter>
   );
 }
 export default App;
