@@ -50,10 +50,10 @@ function BlogPage(){
   useEffect(() => {
     let matched = false;
 
-
+console.log("visitingUser",visitingUser)
     if (visitingUser && visitingUser.user2 && visitingUser.user2 === profile.username) {
       matched = true;
-
+      console.log("checked if")
     }
 
     setIsMatched(matched);console.log("matched?", isMatched);
@@ -97,7 +97,7 @@ function BlogPage(){
 
   console.log("another posts",anotherPost);
 
-  
+
 
   useEffect(() => {
     const fetchData = async () => {
