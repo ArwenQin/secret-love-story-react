@@ -50,12 +50,12 @@ function BlogPage(){
   useEffect(() => {
     let matched = false;
 
-console.log("visitingUser",visitingUser)
+
     if (visitingUser && visitingUser.user2 && visitingUser.user2 === profile.username) {
       matched = true;
-      console.log("checked if")
+
     }
-    console.log("matched is now", matched);
+
     setIsMatched(matched);console.log("matched?", isMatched);
   }, [visitingUser, currentUser, isMatched]);
 
